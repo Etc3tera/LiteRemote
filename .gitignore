@@ -1,0 +1,10 @@
+.vs
+LiteRemote/bin/
+LiteRemote/obj/
+NativeCommand/obj/
+packages/
+NativeCommand/bin/
+Test/bin/
+Test/obj/
+*.db
+*.user
