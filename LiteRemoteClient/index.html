@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>LiteRemote Client</title>
+    </head>
+    <body style="margin: 0;">
+        <div id="app">
+            <div>
+                <img :src="screen" v-on:click="sendLeftClick">
+            </div>
+            <div>
+                Key Sequence: <input type="text" size="60" v-model="keySequence">
+                <button type="button" v-on:click="sendKeySequence">Send</button>
+            </div>
+            <div>
+                Key Message: <input type="text" size="60" v-model="keyMessage">
+                <button type="button" v-on:click="sendKeyMessage">Send</button>
+            </div>
+        </div>
+
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="jquery.signalR-2.2.2.min.js"></script>
+        <script src="http://192.168.1.169:54321/signalr/hubs"></script>
+        <script src="vue.min.js"></script>
+        <script src="core.js"></script>
+    </body>
+</html>
